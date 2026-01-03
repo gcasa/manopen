@@ -1,6 +1,7 @@
  
 #import "FindPanelController.h"
 #import <stdlib.h>
+#import <stdio.h>
 #import <Foundation/NSString.h>
 #import <Foundation/NSException.h>
 #import <Foundation/NSArray.h>
@@ -14,6 +15,12 @@
 #import <AppKit/NSColor.h>
 #import "ManDocumentController.h"
 #import "ManDocument.h"
+
+static inline void MOBeep(void)
+{
+    fputc('\a', stderr);
+    fflush(stderr);
+}
 
 @interface NSText (Search)
 - (BOOL)findString:(NSString *)aString
@@ -101,7 +108,7 @@
 
     if ([string length] == 0)
     {
-        NSBeep();
+        MOBeep();
         return;
     }
 
@@ -190,7 +197,7 @@
     }
     else
     {
-        NSBeep();
+        MOBeep();
         [statusField setStringValue:@"Not found"];
         return NO;
     }

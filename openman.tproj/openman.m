@@ -1,7 +1,9 @@
 
 #import <Foundation/Foundation.h>
 #import <AppKit/NSWorkspace.h>
+#ifdef OPENSTEP
 #import <libc.h>  // for getopt()
+#endif
 #import <ctype.h> // for isdigit()
 #import "ManOpenProtocol.h"
 

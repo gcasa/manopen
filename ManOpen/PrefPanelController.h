@@ -1,10 +1,10 @@
 /* PrefPanelController.h created by lindberg on Fri 08-Oct-1999 */
 
 #import "SystemType.h"
-#ifdef OPENSTEP
-#import "NSWindowController.h"
-#else
+#if __has_include(<AppKit/NSWindowController.h>)
 #import <AppKit/NSWindowController.h>
+#else
+#import "NSWindowController.h"
 #endif
 
 @class NSMutableArray;

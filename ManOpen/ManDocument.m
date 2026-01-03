@@ -523,6 +523,8 @@
 
 #ifdef MACOS_X
 #import <ApplicationServices/ApplicationServices.h>
+#elif GNUSTEP
+#import <AppKit/PSOperators.h>
 #else
 #import <AppKit/psops.h>
 #endif
@@ -646,12 +648,8 @@ static NSCursor *linkCursor = nil;
     CGContextShowTextAtPoint(context, point.x, point.y, [str cString], [str cStringLength]);
     CGContextRestoreGState(context);
 #else
-    PSgsave();
-    PSsetgray(0.0);
-    PSselectfont([[font fontName] cString], [font pointSize]);
-    PSmoveto(point.x, point.y);
-    PSshow([str cString]);
-    PSgrestore();
+    /* Fallback for environments without DPS: draw with NSString APIs. */
+    [str drawAtPoint:point withAttributes:attribs];
 #endif
 }
 

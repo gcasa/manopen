@@ -1,9 +1,9 @@
 
 #import "SystemType.h"
-#ifdef OPENSTEP
-#import "NSWindowController.h"
-#else
+#if __has_include(<AppKit/NSWindowController.h>)
 #import <AppKit/NSWindowController.h>
+#else
+#import "NSWindowController.h"
 #endif
 
 @class NSText, NSTextField, NSButton;

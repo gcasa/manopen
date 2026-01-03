@@ -1,6 +1,6 @@
 
 #import "NSData+Utils.h"
-#import <libc.h>
+#import <string.h>
 #import <ctype.h>
 
 @implementation NSData (Utils)

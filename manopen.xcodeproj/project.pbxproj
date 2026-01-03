@@ -1,0 +1,90 @@
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 56;
+    objects = {
+	"0529442E-52C4-9404-4CAC-2E230412A69C" = {
+	    buildConfigurationList = "F1B9D794-F160-0404-70E9-FA6D56AFC2A7";
+	    compatibilityVersion = "Xcode 14.0";
+	    developmentRegion = en;
+	    hasScannedForEncodings = 0;
+	    isa = PBXProject;
+	    mainGroup = "46ABD058-4431-4606-4DFB-15F1511EACB6";
+	    minimizedProjectReferenceProxies = <*I0>;
+	    productRefGroup = "F73D0689-8C28-1A0A-601C-0FFA7E9F85CC";
+	    projectDirPath = "";
+	    projectRoot = "";
+	    targets = (
+		"549922AE-8BEE-D202-606B-66007FDC1554"
+	    );
+	};
+	"0C156D9D-D71C-4202-507A-B10267AEAEEA" = {
+	    buildSettings = {
+		SDKROOT = macosx;
+	    };
+	    isa = XCBuildConfiguration;
+	    name = Release;
+	};
+	"279313C5-0D78-5000-73AD-26945B280865" = {
+	    files = (
+	    );
+	    isa = PBXResourcesBuildPhase;
+	};
+	"34AB571C-BF54-A303-6BB1-E16512EA77C0" = {
+	    children = (
+	    );
+	    isa = PBXGroup;
+	    sourceTree = "<group>";
+	};
+	"46ABD058-4431-4606-4DFB-15F1511EACB6" = {
+	    children = (
+		"34AB571C-BF54-A303-6BB1-E16512EA77C0",
+		"F73D0689-8C28-1A0A-601C-0FFA7E9F85CC"
+	    );
+	    isa = PBXGroup;
+	    sourceTree = "<group>";
+	};
+	"549922AE-8BEE-D202-606B-66007FDC1554" = {
+	    buildPhases = (
+		"9A0EBEB8-A045-8A0A-634C-F979DAE6F0DB",
+		"279313C5-0D78-5000-73AD-26945B280865"
+	    );
+	    isa = PBXNativeTarget;
+	    name = ManOpen;
+	    productName = ManOpen;
+	    productType = "";
+	};
+	"70FD04D9-F409-D909-5826-F09D4B6B8289" = {
+	    includeInIndex = 0;
+	    isa = PBXFileReference;
+	    lastKnownFileType = "compiled.mach-o.executable";
+	    path = ManOpen;
+	    sourceTree = "<group>";
+	};
+	"9A0EBEB8-A045-8A0A-634C-F979DAE6F0DB" = {
+	    files = (
+	    );
+	    isa = PBXSourcesBuildPhase;
+	};
+	"BF02FF13-B8E9-F505-5434-CEE082816FAC" = {
+	    isa = XCBuildConfiguration;
+	};
+	"F1B9D794-F160-0404-70E9-FA6D56AFC2A7" = {
+	    buildConfigurations = (
+		"BF02FF13-B8E9-F505-5434-CEE082816FAC",
+		"0C156D9D-D71C-4202-507A-B10267AEAEEA"
+	    );
+	    isa = XCConfigurationList;
+	};
+	"F73D0689-8C28-1A0A-601C-0FFA7E9F85CC" = {
+	    children = (
+		"70FD04D9-F409-D909-5826-F09D4B6B8289"
+	    );
+	    isa = PBXGroup;
+	    name = Products;
+	    sourceTree = "<group>";
+	};
+    };
+    rootObject = "0529442E-52C4-9404-4CAC-2E230412A69C";
+}

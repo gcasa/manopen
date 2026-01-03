@@ -2,10 +2,10 @@
 #import "ManOpenProtocol.h"
 #import "SystemType.h"
 
-#ifdef OPENSTEP
-#import "NSDocumentController.h"
-#else
+#if __has_include(<AppKit/NSDocumentController.h>)
 #import <AppKit/NSDocumentController.h>
+#else
+#import "NSDocumentController.h"
 #endif
 
 

@@ -1,10 +1,10 @@
 /* AproposDocument.h created by lindberg on Tue 10-Oct-2000 */
 
 #import "SystemType.h"
-#ifdef OPENSTEP
-#import "NSDocument.h"
-#else
+#if __has_include(<AppKit/NSDocument.h>)
 #import <AppKit/NSDocument.h>
+#else
+#import "NSDocument.h"
 #endif
 
 @class NSMutableArray;

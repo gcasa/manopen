@@ -1,9 +1,9 @@
 
 #import "SystemType.h"
-#ifdef OPENSTEP
-#import "NSDocument.h"
-#else
+#if __has_include(<AppKit/NSDocument.h>)
 #import <AppKit/NSDocument.h>
+#else
+#import "NSDocument.h"
 #endif
 
 @class ManTextView;
